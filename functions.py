@@ -11,7 +11,7 @@ def add1(a,*b,**c):
     for x,y in c.items():
         sum=sum+y
     return sum
-
+#The first
 j=add1(10,10,10,x=10,y=20)
 print ("sum " + str(float(j)))
 k=add(10,30,30)

@@ -19,6 +19,15 @@ studentinfo={ "101":{
                    "marks": {"sem1": 10, "sem2": 20, "sem3": 30
                }}
 }
+
+for roll_no,details in studentinfo.items():
+    sum=0
+    print(details)
+    for m,n in details.items():
+            if (m=="marks"):
+                for i,j in n.items():
+                    sum=sum+j
+print ("rollno " + str(sum))
 '''
 print(studentinfo)
 print (studentinfo["101"])
@@ -38,17 +47,7 @@ for x,y in studentinfo.values():
     print (x)
     print (y)
 '''
-sum=0
-for roll_no,details in studentinfo.items():
-    print(details)
-            for m,n in details.items():
-            if (m=="marks"):
-                print (n)
-                for i,j in n.items():
-                    sum=sum+j
-            else:
-                print ("")
-                print (sum)
+
 
 
 '''print (studentinfo.keys())
