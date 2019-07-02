@@ -1,0 +1,5 @@
+key=["name","age"]
+value=["Arun",23,"Anil",34]
+z=zip(key,value)
+print(type(z))
+
