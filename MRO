@@ -1,0 +1,18 @@
+#MRO:method resolution order
+
+class a():
+    def display(self):
+        print("a")
+class b():
+    pass
+class c(a):
+    pass
+class d(b):
+    pass
+class e(d):
+    pass
+class g(c):
+    pass
+class f(g,e):
+    pass
+p1=f.display()
