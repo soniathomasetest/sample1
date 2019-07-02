@@ -1,0 +1,14 @@
+f=open("testfile.txt")
+x=f.readlines()
+print (x)
+
+s={}
+for item in x:
+    print (item)
+    val=item.split(',')
+    total=float(val[2])+float(val[3])+float(val[4])
+    s[val[1]]=total #inserted name and total mark as a key-value pair into the dictionary s
+
+
+
+print(sorted(s.items(), key=lambda kv: (kv[1], kv[0]),reverse=True))
